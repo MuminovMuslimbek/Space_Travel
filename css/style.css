@@ -1,5 +1,4 @@
 @import url(font.css);
-
 * {
     margin: 0;
     padding: 0;
@@ -29,10 +28,10 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    row-gap: 30px;
+    row-gap: 60px;
     height: 100%;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -165,19 +164,16 @@ body {
         text-align: center;
         position: relative;
     }
-
     .text-content img {
         position: absolute;
         top: 10px;
         left: 10px;
     }
-
     .text-content h1 {
         max-width: 250px;
         font-size: 20px;
         margin-top: 30px;
     }
-
     .text-content p {
         max-width: 230px;
         font-size: 12px;
