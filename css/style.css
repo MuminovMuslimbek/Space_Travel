@@ -1,0 +1,185 @@
+@import url(font.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: "Poppins";
+    background: url('../images/AI\ image\ -\ OpenAI.png');
+    background-color: #08202B;
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: 65% 100vh;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    row-gap: 30px;
+    height: 100%;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text-content {
+    max-width: 600px;
+    padding: 25px 26px;
+    border-radius: 10px;
+    text-align: left;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    row-gap: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: rgba(236, 227, 227, 0.114);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(5.5px);
+    backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(86, 79, 79, 0.268);
+}
+
+.text-content h1 {
+    max-width: 382px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1;
+    margin-top: -10px;
+}
+
+.text-content p {
+    max-width: 384px;
+    font-size: 15px;
+}
+
+.explore-button {
+    max-width: 126px;
+    padding: 14px 28px;
+    background-color: #63E1E1;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.explore-button:hover {
+    background-color: #63E1E1;
+    -webkit-box-shadow: 1px 1px 15px #63E1E1;
+    box-shadow: 1px 1px 15px #63E1E1;
+}
+
+.explore-button:active {
+    -webkit-transform: scale(0.88);
+    -ms-transform: scale(0.88);
+    transform: scale(0.88);
+}
+
+.bottoom-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 25px;
+    background: rgb(120 110 110 / 10%);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(5.5px);
+    backdrop-filter: blur(5.5px);
+    border: 1px solid #ffffff5e;
+}
+
+.bottom-card {
+    max-width: 230px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 8px;
+    color: #fff;
+}
+
+.bottom-card h3 {
+    max-width: 82px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.bottom-card p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@media screen and (max-width:831px) {
+    .bottoom-menu {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .text-content {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .text-content img {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+    .text-content h1 {
+        max-width: 250px;
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .text-content p {
+        max-width: 230px;
+        font-size: 12px;
+    }
+}
