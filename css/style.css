@@ -16,6 +16,7 @@ body {
     background-position-x: right;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    cursor: none;
 }
 
 .container {
@@ -35,6 +36,29 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.custom-cursor {
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transition: transform 0.1s ease;
+}
+
+.custom-cursor::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .text-content {
@@ -79,7 +103,7 @@ body {
     border-radius: 50px;
     font-size: 18px;
     color: black;
-    cursor: pointer;
+    cursor: none;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
@@ -151,6 +175,10 @@ body {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+    }
+
+    .custom-cursor {
+        display: none;
     }
 }
 
